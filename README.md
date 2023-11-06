@@ -94,7 +94,8 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 이 프로젝트는 다음과 같은 CRUD 기능을 제공합니다
 </br>
 
-<img src="https://user-images.githubusercontent.com/130081021/280663028-86a5da4a-b006-471c-a31a-7e65386baa6e.png">
+<img src="https://user-images.githubusercontent.com/130081021/280756568-876712ab-becf-47ba-97c2-beb3cfbd2477.png">
+<img src="https://user-images.githubusercontent.com/130081021/280756589-7e7ae983-477a-44d7-90c8-31110a64b632.png">
 
 </br>
 
