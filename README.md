@@ -79,11 +79,13 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 
 </br>
 
-Node.js: Node.js</br>
-Express.js: Express.js</br>
-Mongoose: Mongoose</br>
-Prettier: Prettier</br>
-Thunder Client: Thunder Client</br>
+- Node.js</br>
+- Express.js</br>
+- Mongoose</br>
+- Prettier</br>
+- Thunder Client</br>
+- Rest Client</br>
+- Dotenv</br>
 
 </br>
 </br>
