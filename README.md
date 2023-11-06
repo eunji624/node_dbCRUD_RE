@@ -24,17 +24,17 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 </br>
 </br>
 
-📦app.js
-📦routes
- ┗ 📜products_router.js
-📦schemas
- ┣ 📜index.js
- ┗ 📜products_schema.js
-📜.env
-📜.gitignore
-📜.prettierrc
-📜.package.json
-📜.package-lock.json
+📦app.js</br>
+📦routes</br>
+ ┗ 📜products_router.js</br>
+📦schemas</br>
+ ┣ 📜index.js</br>
+ ┗ 📜products_schema.js</br>
+📜.env</br>
+📜.gitignore</br>
+📜.prettierrc</br>
+📜.package.json</br>
+📜.package-lock.json</br>
 
 </br>
 </br>
@@ -45,9 +45,35 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 </br>
 </br>
 </br>
-
+- 데이터 전체보기(확인용)
+<img src = "https://user-images.githubusercontent.com/130081021/280651292-4912a7d6-8658-4e88-b0fe-c54639381eda.gif">
+</br>
+--------------
+</br>
+- 상품 리스트 보기
+<img src = "https://user-images.githubusercontent.com/130081021/280651275-abdb472c-491b-40c7-9d58-0840707eecdc.gif">
+</br>
+--------------
+</br>
+- 상품 상세 보기
+<img src = "https://user-images.githubusercontent.com/130081021/280651290-c960e998-82e1-4f47-a43a-8a07968b36d3.gif">
+</br>
+--------------
+</br>
+- 상품 올리기 (작성)
+<img src = "https://user-images.githubusercontent.com/130081021/280651281-10315d47-06ed-4d13-8fe4-4ca81d44038d.gif">
+</br>
+--------------
+</br>
+- 상품 수정하기 
+<img src = "https://user-images.githubusercontent.com/130081021/280651287-b40f89fd-1c69-4a51-a312-2250486941c5.gif">
+</br>
+--------------
+</br>
+- 상품 삭제하기 
 <img src = "https://user-images.githubusercontent.com/130081021/280651249-192862ea-316f-4ac3-8755-27e2260e1cdf.gif">
-
+</br>
+--------------
 </br>
 </br>
 </br>
