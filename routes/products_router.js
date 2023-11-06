@@ -2,10 +2,6 @@ const express = require("express");
 const cocoaMarket = require("../schemas/products_schema.js");
 const router = express.Router();
 
-//body-parser 미들웨어
-router.use(express.json());
-router.use(express.urlencoded({extended : true }));
-
 //데이터베이스 전체 가져오기__ 확인용 
 router.get("/productsAll", async(req, res)=>{
   try{
