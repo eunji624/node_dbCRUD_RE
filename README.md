@@ -8,7 +8,7 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 </br>
 </br>
 </br>
-</br>
+
 
 ## 프로젝트 구조
 
@@ -21,8 +21,16 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 - `routes`: 서버 라우팅을 정의한 디렉토리입니다.
 - `schemas/`: 데이터 스케마를 정의한 디렉토리입니다.
 
+</br>
+</br>
+</br>
+
+
 ## 실행 영상
 
+</br>
+</br>
+</br>
 
 
 ## 주요 도구
@@ -39,7 +47,7 @@ Thunder Client: Thunder Client</br>
 </br>
 </br>
 
-## api
+## API 명세서
 
 </br>
 
@@ -47,8 +55,4 @@ Thunder Client: Thunder Client</br>
 
 </br>
 
-GET /api/items: 모든 항목 조회</br>
-GET /api/items/:id: 특정 항목 조회</br>
-POST /api/items: 새 항목 추가</br>
-PUT /api/items/:id: 특정 항목 수정</br>
-DELETE /api/items/:id: 특정 항목 삭제</br>
+
