@@ -59,7 +59,7 @@ router.post("/product", async (req, res)=>{
     return res.status(200).json({message : "데이터를 저장하는데 성공하였습니다."});
   } catch (err){
     console.log(err);
-    res.status(404).json({message : "데이터를 저장하는데 실패하였습니다."});
+    res.status(404).json({"message" : "리소스를 찾을 수 없습니다."});
   }
 })
 

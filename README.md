@@ -92,8 +92,10 @@ Thunder Client: Thunder Client</br>
 ## API 명세서
 
 </br>
+이 프로젝트는 다음과 같은 CRUD 기능을 제공합니다
+</br>
 
-이 프로젝트는 다음과 같은 CRUD 기능을 제공합니다:
+<img src="https://user-images.githubusercontent.com/130081021/280663028-86a5da4a-b006-471c-a31a-7e65386baa6e.png">
 
 </br>
 
