@@ -23,8 +23,22 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 
 </br>
 </br>
-</br>
 
+📦app.js
+📦routes
+ ┗ 📜products_router.js
+📦schemas
+ ┣ 📜index.js
+ ┗ 📜products_schema.js
+📜.env
+📜.gitignore
+📜.prettierrc
+📜.package.json
+📜.package-lock.json
+
+</br>
+</br>
+</br>
 
 ## 실행 영상
 
@@ -32,6 +46,11 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 </br>
 </br>
 
+<img src = "https://user-images.githubusercontent.com/130081021/280651249-192862ea-316f-4ac3-8755-27e2260e1cdf.gif">
+
+</br>
+</br>
+</br>
 
 ## 주요 도구
 
