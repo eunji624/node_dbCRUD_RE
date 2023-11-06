@@ -1,9 +1,8 @@
 # node_dbCRUD_RE
 
 </br>
-이 프로젝트는 Node.js와 Express를 사용하여 </br>
+이 프로젝트는 Node.js, Express, MongoDB 를 사용하여 </br>
 CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트입니다.</br>
-프론트엔드 부분은 없으며, 서버 측에서 데이터를 관리하고 보여줍니다.</br>
 
 </br>
 </br>
@@ -82,10 +81,8 @@ CRUD (Create, Read, Update, Delete) 서비스 서버를 구축한 프로젝트�
 - Node.js</br>
 - Express.js</br>
 - Mongoose</br>
-- Prettier</br>
 - Thunder Client</br>
 - Rest Client</br>
-- Dotenv</br>
 
 </br>
 </br>
