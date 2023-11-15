@@ -7,7 +7,7 @@ const productSchema = new mongoose.Schema({
   },
   author : {
     type : String,
-    unique : 1,
+    unique : true,
     required: true,
   },
   content: {
@@ -17,7 +17,6 @@ const productSchema = new mongoose.Schema({
   pwd: {
     type: String, 
     required: true,
-    unique : 1,
   },
   status : {
     type : String,
@@ -29,4 +28,4 @@ const productSchema = new mongoose.Schema({
 );
 
 
-module.exports = mongoose.model("cocoaMarket", productSchema);
+module.exports = mongoose.model("Product", productSchema);

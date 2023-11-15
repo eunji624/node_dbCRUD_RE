@@ -1,15 +1,35 @@
 ###
+###게시글 전체 조회(확인용)
+GET http://localhost:3002/api/productsAll HTTP/1.1
+Content-Type: application/json
+
+
+
+###게시글 전체 조회
+GET http://localhost:3002/api/products HTTP/1.1
+Content-Type: application/json
+
+
+
+
+
+###게시글 상세조회
+GET http://localhost:3002/api/products/655468dc7923f3bffb465104 HTTP/1.1
+Content-Type: application/json
+
+
+
 
 
 ###게시글 작성하기
-POST http://localhost:3002/api/product
-Content-Type: application/json;
+POST http://localhost:3002/api/product HTTP/1.1
+Content-Type: application/json
 
 {
-  "productName" : "에어팟 프로1",
-  "author" : "팬파인애플애플팬",
-  "content" : "1년쓴 에어팟 프로1 팔아요",
-  "pwd" : "2323",
+  "productName" : "황금향",
+  "author" : "황금별",
+  "content" : "아주 맛나요",
+  "pwd" : "2323ddd"
 }
 
 
