@@ -1,4 +1,6 @@
 const express = require("express");
+const bcrypt = require('bcrypt');
+
 const Product = require("../schemas/products_schema.js");
 const router = express.Router();
 
@@ -32,14 +34,11 @@ router.post("/products", async (req, res)=>{
   if(!productName, !author, !content, !pwd){
     return res.status(400).json({"message" : "데이터 형식이 올바르지 않습니다."})
   }
-  const inputData = {
-    productName,
-    author,
-    content,
-    pwd,
-  };
   try{
-    await Product.create(inputData);
+    const salt = await bcrypt.genSalt(10); // 기본이 10번이고 숫자가 올라갈수록 연산 시간과 보안이 높아진다.
+    const hashed = await bcrypt.hash(pwd, salt); // hashed를 데이터베이스에 저장한다.
+
+    await Product.create({productName, author, content, pwd: hashed});
     return res.status(200).json({message : "데이터를 저장하는데 성공하였습니다."});
   } catch (err){
     console.log(err);
@@ -69,7 +68,8 @@ router.delete("/products/:_id", async (req, res)=>{
   }
   try{
     const data = await Product.findById(_id);
-    if(data.pwd !== pwd){
+    const samePassword = await bcrypt.compare(req.body.pwd, data.pwd);
+    if(!samePassword){
       return res.status(401).json({ "messege" : "비밀번호가 올바르지 않습니다."})
     }
     await Product.deleteOne(_id)
@@ -81,7 +81,7 @@ router.delete("/products/:_id", async (req, res)=>{
 })
 
 //상품 수정하기
-router.put("/products/:_id", async (req, res)=>{
+router.patch("/products/:_id", async (req, res)=>{
   const _id = req.params;
   const { productName, content, status, pwd } = req.body;
   
@@ -90,10 +90,11 @@ router.put("/products/:_id", async (req, res)=>{
   }
   try{
     const data = await Product.findById(_id);
-    if(data.pwd !== pwd){
+    const samePassword = await bcrypt.compare(req.body.pwd, data.pwd);
+    if(!samePassword){
       return res.status(401).json({ "messege" : "비밀번호가 올바르지 않습니다."})
     }
-    await Product.updateOne({productName, content, status, pwd})
+    await Product.updateOne({productName, content, status})
     return res.status(200).json({"messege" : "상품이 수정되었습니다."})
   }catch (err){
     console.log(err)

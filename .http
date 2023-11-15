@@ -22,15 +22,43 @@ Content-Type: application/json
 
 
 ###게시글 작성하기
-POST http://localhost:3002/api/product HTTP/1.1
+POST http://localhost:3002/api/products HTTP/1.1
 Content-Type: application/json
 
 {
-  "productName" : "황금향",
-  "author" : "황금별",
-  "content" : "아주 맛나요",
+  "productName" : "33생수",
+  "author" : "33제주도민",
+  "content" : "33제주삼다수",
   "pwd" : "2323ddd"
 }
+
+
+
+
+
+###게시글 삭제하기
+DELETE  http://localhost:3002/api/products/65547e63b70c78b89f442efd HTTP/1.1
+Content-Type: application/json
+
+{
+  "pwd" : "2323ddd"
+}
+
+
+
+
+###게시글 수정하기
+PATCH   http://localhost:3002/api/products/6554812470756961c7cd6f34 HTTP/1.1
+Content-Type: application/json
+
+{
+  "productName" : "11생수",
+  "content" : "11제주삼다수",
+  "status" : "FOR_SALE",
+  "pwd" : "2323ddd"
+}
+
+
 
 
 
